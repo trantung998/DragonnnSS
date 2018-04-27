@@ -597,7 +597,8 @@ GameObject:
   - component: {fileID: 114223107213332274}
   - component: {fileID: 114059787036562824}
   - component: {fileID: 95002116607343892}
-  m_Layer: 9
+  - component: {fileID: 114277010628514214}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2575,13 +2576,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1563533350088524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkByDefault: 0
-  lookInCameraDirection: 1
+  walkByDefault: 1
+  lookInCameraDirection: 0
+  move: {x: 0, y: 0, z: 0}
 --- !u!114 &114223107213332274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2622,6 +2624,19 @@ MonoBehaviour:
     m_Bits: 4294967295
   lookBlendTime: 0
   lookWeight: 1
+--- !u!114 &114277010628514214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563533350088524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb0bd8c4e0dd1548b7ec88a73f7d30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRaycaster: {fileID: 0}
+  currentClickTarget: {x: 0, y: 0, z: 0}
 --- !u!136 &136035081575655810
 CapsuleCollider:
   m_ObjectHideFlags: 1

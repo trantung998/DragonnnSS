@@ -17,6 +17,7 @@ namespace UnitySampleAssets.Characters.ThirdPerson
         private Transform cam; // A reference to the main camera in the scenes transform
         private Vector3 camForward; // The current forward direction of the camera
 
+        [SerializeField]
         private Vector3 move;
         private bool jump;// the world-relative desired move direction, calculated from the camForward and user input.
 

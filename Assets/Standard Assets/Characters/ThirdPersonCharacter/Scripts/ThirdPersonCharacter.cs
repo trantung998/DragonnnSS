@@ -102,7 +102,6 @@ namespace UnitySampleAssets.Characters.ThirdPerson
         // based on User input, or an AI control script
         public void Move(Vector3 move, bool crouch, bool jump, Vector3 lookPos)
         {
-
             if (move.magnitude > 1) move.Normalize();
 
             // transfer input parameters to member variables.
