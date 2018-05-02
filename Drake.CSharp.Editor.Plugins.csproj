@@ -280,6 +280,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>Assets\Plugins\Editor\JetBrains\JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Drake.CSharp.Plugins.csproj">
@@ -292,7 +295,35 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\Editor\JetBrains\Unity3DRider.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\CleanupMissingScripts.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditorHelper.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditorResources.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DHierarchyIcon.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DPrefs.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DCameraWindowEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DCinematicsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DForwardFocusEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DGeometryBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitDistanceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitSpeedEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DNumericBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPanAndZoomEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DParallaxEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPixelPerfectEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPointerInfluenceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DRailsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DRepeaterEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DRoomsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DShakeEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DSpeedBasedZoomEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DTransitionsFXEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DZoomToFitTargetsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Helpers\Pixel Perfect\Editor\ProCamera2DPixelPerfectSpriteEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerInfluenceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerRailsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerZoomEditor.cs" />
     <Compile Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Editor\ImageEffects\AntialiasingAsPostEffectEditor.cs" />
     <Compile Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Editor\ImageEffects\BloomAndLensFlaresEditor.cs" />
     <Compile Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Editor\ImageEffects\BloomEditor.cs" />
@@ -316,16 +347,16 @@
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Editor\WheelEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Note about Editor Folder.txt" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Texture.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
-    <None Include="Assets\ProCamera2D\README.txt" />
-    <None Include="Assets\ProCamera2D\TransitionFX Textures\README.txt" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Texture.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\README.txt" />
+    <None Include="Assets\Plugins\ProCamera2D\TransitionFX Textures\README.txt" />
+    <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

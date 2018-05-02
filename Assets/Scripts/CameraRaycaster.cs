@@ -1,11 +1,24 @@
-﻿using UnityEngine;
+﻿using UniRx;
+using UnityEngine;
+
+public struct OnLayerhitChanged
+{
+    public Layer layer;
+
+    public OnLayerhitChanged(Layer layer)
+    {
+        this.layer = layer;
+    }
+}
 
 public class CameraRaycaster : MonoBehaviour
 {
-    public Layer[] layerPriorities = {
+    [SerializeField]
+    private Layer[] layerPriorities = {
         Layer.Enemy,
         Layer.Walkable
     };
+    
     [SerializeField]
     float distanceToBackground = 100f;
     Camera viewCamera;
@@ -36,7 +49,12 @@ public class CameraRaycaster : MonoBehaviour
             if (hit.HasValue)
             {
                 m_hit = hit.Value;
-                m_layerHit = layer;
+                
+                if (m_layerHit != layer)
+                {
+                    MessageBroker.Default.Publish(new OnLayerhitChanged(layer));
+                    m_layerHit = layer;
+                }
                 return;
             }
         }

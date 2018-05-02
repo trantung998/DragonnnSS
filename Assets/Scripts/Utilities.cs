@@ -1,6 +1,6 @@
 ﻿public enum Layer
 {
-    Enemy = 9,
-    Walkable = 8,
+    Enemy = 8,
+    Walkable = 9,
     RaycastEndStop = -1,
 }

@@ -2,6 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,99 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAddCameraTargetAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAdjustCameraTargetInfluenceAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluenceAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluencesTimedAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DCinematicsToggleAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DMoveCameraInstantlyToPositionAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DRemoveCameraTargetAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeStopAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithPresetAction.cs" />
-    <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithValuesAction.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\BasePC2D.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\BaseTrigger.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\BoundariesAnimator.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\CameraTarget.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\EnumMovementAxis.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\EnumUpdateType.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\IPositionDeltaChanger.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\IPositionOverrider.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\IPostMover.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\IPreMover.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\ISizeDeltaChanger.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\ISizeOverrider.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\KDTree.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\MoveInColliderBoundaries.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\Utils\EditorPrefsX.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\Utils\PrefsData.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Core\Utils\Utils.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DCameraWindow.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DCinematics.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DForwardFocus.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DGeometryBoundaries.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DLimitDistance.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DLimitSpeed.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DNumericBoundaries.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPanAndZoom.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DParallax.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPixelPerfect.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPointerInfluence.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DRails.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DRepeater.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DRooms.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DShake.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DSpeedBasedZoom.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DTransitionsFX.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DZoomToFitTargets.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Helpers\Letterbox\ProCamera2DLetterbox.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Helpers\Parallax\ProCamera2DParallaxObject.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Helpers\Pixel Perfect\ProCamera2DPixelPerfectSprite.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\BasicBlit.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerBoundaries.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerInfluence.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerRails.cs" />
-    <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerZoom.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\DollyZoomExample.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInput.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInputBot.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\RoomsEventsExample.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\ToggleCinematics.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\ToggleTransitionsFX.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Bullet.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Door.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\DoorKey.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyAttack.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyFSM.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyPatrol.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemySight.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyWander.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\PatrolWaypoint.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\GameOver.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Goal.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectMove.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectRotate.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerFire.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerInput.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\Pool.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\PoolMember.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\RotateTowardsMouse.cs" />
-    <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\SwitchCameraProjection.cs" />
-    <Compile Include="Assets\ProCamera2D\ProCamera2D.cs" />
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Texture.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
-    <None Include="Assets\ProCamera2D\README.txt" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
-    <None Include="Assets\ProCamera2D\TransitionFX Textures\README.txt" />
-    <None Include="Assets\Note about Editor Folder.txt" />
-    <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+    <Compile Include="Assets\Scripts\CameraRaycaster.cs" />
+    <Compile Include="Assets\Scripts\ClickToMovePlayer.cs" />
+    <Compile Include="Assets\Scripts\CursorAffordance.cs" />
+    <Compile Include="Assets\Scripts\Utilities.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>E:/Unity 2017.1.0b1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -155,7 +68,7 @@
       <HintPath>E:/Unity 2017.1.0b1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:\Unity\Projects\Drake\Library\resharper-unity-libs\nunit3.5.0\nunit.framework.dll</HintPath>
+      <HintPath>E:/Unity 2017.1.0b1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>E:/Unity 2017.1.0b1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
